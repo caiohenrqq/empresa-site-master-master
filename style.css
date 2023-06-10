@@ -250,5 +250,33 @@ nav::after {
 
 #card-servicos {
     background-color: #3F99FF;
+    transition: transform 0.3s ease-in-out;
 }
 
+#card-servicos:hover {
+    transform: scale(1.2);
+}
+
+#card-servicos-6 {
+    transition: transform 0.3s ease-in-out;
+}
+
+#card-servicos-6:hover {
+    transform: scale(1.2);
+}
+
+#card-servicos-7 {
+    transition: transform 0.3s ease-in-out;
+}
+
+#card-servicos-7:hover {
+    transform: scale(1.2);
+}
+
+#card-servicos-8 {
+    transition: transform 0.3s ease-in-out;
+}
+
+#card-servicos-8:hover {
+    transform: scale(1.2);
+}
