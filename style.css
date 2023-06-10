@@ -218,7 +218,9 @@ nav::after {
   }
 
 .section-sobre {
-    margin-bottom: 33vh;
+    margin-top: -14rem;
+    padding-block: 13rem;
+    padding-block-end: 21rem;
 }
 
 .section-sobre h1 {
