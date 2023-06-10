@@ -237,6 +237,12 @@ nav::after {
     margin-top: 0.7rem;
 }
 
+.section-servicos {
+    margin-top: -14rem;
+    padding-block: 13rem;
+    padding-block-end: 21rem;
+}
+
 .section-servicos p {
     color: var(--branco);
     font-weight: 200;
@@ -282,3 +288,4 @@ nav::after {
 #card-servicos-8:hover {
     transform: scale(1.2);
 }
+
