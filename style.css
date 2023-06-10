@@ -1,0 +1,254 @@
+/* Font Setup */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Color Setup */
+
+:root {
+    --azul: #006dff;
+    --azul-claro: #008bff;
+    --azul-claro-2: #009bff;
+    --ciano: #00a4cd;
+    --verde: #00aa88;
+    --branco: #fff;
+    --cinza: #dbdbdb;
+    --cinza-escuro: #303030;
+    --preto: #0F0F0F;
+}
+
+/* Website Setup */
+
+body {
+    background-image: linear-gradient(to right, #006dff, #0073ff, #0079ff, #007fff, #0084ff, #0088ff, #008bff, #008fff, #0092ff, #0095ff, #0098ff, #009bff);
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+/* Navbar Setup */
+
+nav {
+    --borderWidth: 1px;
+    background: transparent;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    margin-bottom: 8px;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(60deg, var(--azul), var(--azul-claro), var(--azul-claro-2), var(--ciano), var(--branco));
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 8s ease alternate infinite;
+    background-size: 300% 300%;
+}
+  
+@keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+    }
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--branco);
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    transition: 1000ms;
+    color: var(--cinza-escuro);
+}
+  
+.nav-link::before {
+    transition: 1000ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #031D44; 
+}
+  
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+  
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+  
+.section-empresa {
+    height: 90vh;
+}
+
+.section-empresa div {
+    font-size: 8vh;
+}
+
+.section-empresa h1, p, span {
+    user-select: none;
+}
+
+.section-empresa h1 {
+    color: var(--branco);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#paragrafo-empresa {
+    font-size: 3vh;
+    font-weight: 400;
+    color: var(--cinza-escuro);
+}
+
+.section-empresa span {
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+/* Bolinhas
+
+.bolinhas {
+    position: fixed;
+    top: 550px;
+    left: -400px;
+    z-index: -1;
+}
+
+.bolinhas2 {
+    position: fixed;
+    top: 600px;
+    left: -200px;
+    z-index: -1;
+}
+ */
+
+.section-empresa button {
+    --bs-btn-padding-y: .9rem; 
+    --bs-btn-padding-x: .9rem;
+    --bs-btn-font-size: 1rem;
+    content: '';
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, var(--azul), var(--azul-claro), var(--azul-claro-2), var(--ciano), var(--verde));
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 5s ease alternate infinite;
+    background-size: 300% 300%;
+    border-radius: 1rem;
+    border-color: transparent;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.section-empresa button:hover {
+    transform: scale(1.09);
+    animation-duration: 2.5s;
+  }
+
+.section-sobre {
+    margin-bottom: 33vh;
+}
+
+.section-sobre h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--branco);
+}
+
+.section-sobre p {
+    color: var(--branco);
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+}
+
+.section-servicos p {
+    color: var(--branco);
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+.section-servicos h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--branco);
+}
+
+#card-servicos {
+    background-color: #3F99FF;
+}
+
