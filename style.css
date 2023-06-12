@@ -289,3 +289,62 @@ nav::after {
     transform: scale(1.2);
 }
 
+@media (max-width: 991px) {   
+    
+    .section-empresa {
+        margin: 10px
+    }
+
+    .section-sobre {
+        margin: 40px;
+        margin-top: -300px;
+    }
+
+    .section-servicos {
+        margin: 40px;
+        margin-top: -500px;
+        top: 10%;
+    }
+
+    .section-servicos h1 {
+        font-size: 1rem;
+    }
+
+    .section-servicos p {
+        font-size: 0.98rem;
+    }
+
+    #card-servicos-6 {
+        top: -1%;
+    }
+
+    #card-servicos-7 {
+        top: -5%;
+    }
+
+    #card-servicos-8 {
+        top: -5%;
+    }
+
+    #cardtext {
+        margin: -10px;
+        text-align: center;
+        font-size: 0.76rem;
+    }
+    
+    #card-servicos:hover {
+        transform: scale(0.9);
+    }
+
+    #card-servicos-6:hover {
+        transform: scale(0.9);
+    }
+    
+    #card-servicos-7:hover {
+        transform: scale(0.9);
+    }
+
+    #card-servicos-8:hover {
+        transform: scale(0.9);
+    }
+}
