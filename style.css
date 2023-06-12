@@ -296,6 +296,7 @@ nav::after {
     right: 30px;
     cursor: pointer;
     transition: all 0.5 ease 0s;
+    display: none;
 }
 
 .scrollTop:hover {
