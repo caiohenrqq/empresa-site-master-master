@@ -74,6 +74,7 @@ body {
 * {
     font-family: 'Inter', sans-serif;
     font-weight: 200;
+    scroll-behavior: smooth;
 }
 
 /* Navbar Setup */
@@ -287,6 +288,25 @@ nav::after {
 
 #card-servicos-8:hover {
     transform: scale(1.2);
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.5 ease 0s;
+}
+
+.scrollTop:hover {
+    color: #000;
+    transform: scale(1);
+}
+
+footer p {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: var(--branco);
 }
 
 @media (max-width: 991px) {   
